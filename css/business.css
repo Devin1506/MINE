@@ -1,0 +1,283 @@
+@charset "utf-8";
+
+.main-container {
+  width: 100%;
+}
+
+.main-content {
+  position: relative;
+  height: auto;
+  overflow: hidden;
+  padding: 220px 0 60px;
+}
+.main-content h1 {
+  width: 100%;
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 140%;
+  text-align: center;
+  color: #181818;
+  margin-bottom: 40px;
+}
+
+.about-content h1 {
+  font-size: 34px;
+  font-weight: 500;
+}
+
+.main-content h1 em {
+  margin: 0 15px;
+  font-style: normal;
+}
+
+.main-content p img {
+  max-width: 100%;
+  text-align: center;
+  display: block;
+  margin: 0px auto;
+}
+
+.main-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 55px auto 30px;
+}
+
+.main-list span {
+  border: 1px solid #181818;
+  border-radius: 10px;
+  padding: 5px 10px;
+  margin: 5px;
+  font-size: 16px;
+  color: #181818;
+  font-weight: 600;
+}
+
+.main-content h2 {
+  max-width: 60%;
+  font-size: 20px;
+  color: #181818;
+  font-weight: 700;
+  line-height: 40px;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  margin: 5px auto;
+}
+
+.main-content p {
+  /* max-width: 60%; */
+  font-size: 18px;
+  color: #181818;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  line-height: 35px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.description-text {
+  max-width: 60%;
+}
+
+.enterprise-section {
+  margin: 50px auto 0;
+}
+.enterprise-section p {
+  max-width: 47%;
+}
+.enterprise-section p span {
+  font-weight: 600;
+}
+
+.about-section {
+  margin: 50px auto 0;
+}
+.about-section p {
+  max-width: 51%;
+  margin-bottom: 10px;
+}
+.about-section p span {
+  font-weight: 600;
+}
+
+.personal-section {
+  margin: 0 auto;
+}
+.personal-section p {
+  max-width: 47%;
+}
+
+.tab-container {
+  width: 100%;
+  margin: 20px auto 0;
+}
+
+.tab-header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.tab-item {
+  padding: 12px 30px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #666;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.tab-item:hover {
+  color: #181818;
+}
+
+.tab-item.active {
+  color: #181818;
+  font-weight: 600;
+}
+
+.tab-item.active::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 3px;
+  background-color: #181818;
+}
+
+.tab-content {
+  animation: fadeIn 0.5s ease;
+}
+
+.guide-section {
+  margin: 0 auto;
+}
+
+.guide-section h2 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-align: left;
+  max-width: 100%;
+}
+
+.guide-section p {
+  text-align: left;
+  margin-bottom: 15px;
+  line-height: 1.6;
+  max-width: 100%;
+}
+
+.guide-video {
+  position: relative;
+  max-width: 975px;
+  margin: 0 auto;
+}
+.video {
+  width: 100%;
+  display: block;
+  height: 600px;
+  background: #000;
+}
+.guide-img {
+  position: relative;
+  max-width: 975px;
+  margin: 0 auto;
+}
+
+.guide-img img {
+  display: block;
+  width: 100%;
+}
+.download-btn {
+  width: 85%;
+  left: 7.5%;
+  padding-top: 22%;
+  position: absolute;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .main-content p {
+    max-width: 80%;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1002px) {
+  .main-content {
+    padding: 120px 10px 50px;
+  }
+  .main-content p {
+    max-width: 90%;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 758px) {
+  .main-content {
+    padding: 120px 10px 50px;
+  }
+  .main-content h1 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .main-content h1 em {
+    margin: 0 5px;
+  }
+  .main-content p {
+    max-width: 100%;
+    font-size: 16px;
+  }
+  .main-list {
+    margin: 20px auto;
+  }
+  .tab-item {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .main-content {
+    padding: 120px 10px 30px;
+  }
+  .main-content h1 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .main-content h1 em {
+    margin: 0 5px;
+  }
+  .main-content p {
+    max-width: 100%;
+    font-size: 16px;
+  }
+  .main-list {
+    margin: 20px auto;
+  }
+  .main-list span {
+    font-weight: 500;
+  }
+  .tab-item {
+    padding: 8px 15px;
+    font-size: 16px;
+  }
+  .video {
+    height: 470px;
+  }
+}
